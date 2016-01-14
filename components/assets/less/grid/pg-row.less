@@ -1,0 +1,32 @@
+.pg-row {
+
+  &.active  .well { background-color: @table-bg-active;  }
+  &.success .well { background-color: @state-success-bg; }
+  &.info    .well { background-color: @state-info-bg;    }
+  &.warning .well { background-color: @state-warning-bg; }
+  &.danger  .well { background-color: @state-danger-bg;  }
+
+  &-checkbox {
+    font-family: 'phpgenerator';
+
+    .text-danger();
+    &:before {
+      content: "\e618";
+    }
+
+    &.checked {
+      .text-success();
+      &:before {
+        content: "\e617";
+      }
+    }
+  }
+
+  &-list {
+    &:before, &:after {
+      content: '';
+      display: none;
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+.sidebar {
+
+  &-nav {
+    &-item {
+      position: relative;
+      display: block;
+      padding: @nav-link-padding;
+      border-radius: 0;
+    }
+
+    .active > &-item {
+      &,
+      &:hover,
+      &:focus {
+        color: @nav-pills-active-link-hover-color;
+        background-color: @nav-pills-active-link-hover-bg;
+      }
+    }
+
+    &-head {
+      font-weight: bold;
+    }
+  }
+
+}

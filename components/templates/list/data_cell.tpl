@@ -1,0 +1,1 @@
+<td data-column-name="{$Cell.ColumnName}"{if $Cell.CellClasses} class="{$Cell.CellClasses}"{/if} style="{$Cell.Style}">{$Cell.Data}</td>

@@ -1,0 +1,11 @@
+.sidebar-inactive .sidebar-outer .container-padding {
+  padding-left: 10px;
+}
+
+.container-fluid {
+  .container-fixed();
+
+  @media (min-width: @screen-md-min) {
+    .container-fixed(@grid-gutter-width * 2);
+  }
+}

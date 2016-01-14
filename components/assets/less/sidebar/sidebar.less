@@ -1,0 +1,78 @@
+.sidebar {
+
+  @widthMax: 240px;
+  @widthMin: 20px;
+
+  position: fixed;
+  width: @widthMax;
+  float: left;
+  height: 100%;
+  top: @navbar-height + 2;
+  left: -@widthMax;
+  bottom: 0;
+  z-index: 5;
+  background: @panel-default-heading-bg;
+  border-right: 1px solid @panel-default-border;
+  transition: left .3s ease-out;
+
+  &-active & {
+    overflow: auto;
+  }
+  &-inactive & {
+    overflow: hidden;
+  }
+
+  &-content {
+    display: none;
+  }
+
+  &-close {
+    color: inherit;
+    float: right;
+    z-index: 1;
+    position: relative;
+    font-size: @font-size-base;
+    margin: 4px 4px 0 0;
+    height: 100%;
+    .icon-chevron-left { display: none; }
+    .icon-chevron-right { display: inline-block; }
+  }
+
+  &-outer {
+    margin-left: 0;
+  }
+  
+  @media (min-width: @screen-tablet) {
+    left: -(@widthMax - 20);
+
+    &-active &-outer {
+      margin-left: @widthMax;
+    }
+  }
+
+  &-active & {
+    left: 0;
+  }
+
+  &-active &-content {
+    display: block;
+  }
+
+  &-active &-close {
+    .icon-chevron-left { display: inline-block; }
+    .icon-chevron-right { display: none; }
+    height: auto;
+  }
+
+  &-backdrop {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 4;
+    height: 100%;
+  }
+
+}
