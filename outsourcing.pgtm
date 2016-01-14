@@ -1,0 +1,1156 @@
+<Project productVersion="15.12.0.1" localizationFileName="C:\Program Files (x86)\SQL Maestro Group\PHP Generator for MySQL Professional\lang.en.php" phpDriver="1" outputPath="C:\xampp\htdocs\outsourcing" copySystemFiles="true" outputFilesExtension="php" colorSchemeName="Cerulean">
+  <ConnectionOptions host="localhost" port="3306" login="root" password="" database="outsourcing" client_encoding="utf8">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication/>
+    </http_tunnel>
+  </ConnectionOptions>
+  <ScriptConnectionOptions host="localhost" port="3306" login="root" password="" database="outsourcing" client_encoding="utf8">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication/>
+    </http_tunnel>
+  </ScriptConnectionOptions>
+  <Queries/>
+  <FieldContainers/>
+  <Presentation disableMagicQuotesRuntime="false" showEnvironmentVariables="false" showExecutedQueries="false" showPHPErrorsAndWarnings="false">
+    <Pages>
+      <Page type="table" tableName="planificacion" fileName="planificacion" caption="Planificación" shortCaption="Planificación" groupName="Default" addSeparator="false" horizontalFilterCondition="" openAdvancedSearchAtFirst="false" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" useActionImages="true" showKeyColumnsImagesInGridHeader="false" numberCardsInRow="3">
+        <BeforeGridText/>
+        <Columns>
+          <ViewColumns>
+            <Column fieldName="id" caption="Id" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="num_req_padre" caption="MrCoo" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="num_req_hijo" caption="Caso de Uso" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="etapa" caption="Etapa de Planificación" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripción" visible="true" totalFunction="0">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+            <Column fieldName="criterios_aceptacion" caption="Criterios Aceptación" visible="true" totalFunction="0">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="observaciones" caption="Observaciones" visible="true" totalFunction="0">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+          </ViewColumns>
+          <SingleRecordViewColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="num_req_padre" caption="MrCoo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="num_req_hijo" caption="Caso de Uso" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="etapa" caption="Etapa de Planificación" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripción" visible="true">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+            <Column fieldName="criterios_aceptacion" caption="Criterios Aceptación" visible="true">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="observaciones" caption="Observaciones" visible="true">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+          </SingleRecordViewColumns>
+          <EditColumns>
+            <Column fieldName="id" caption="Id" visible="false">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="num_req_padre" caption="MrCoo" visible="true">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="num_req_hijo" caption="Caso de Uso" visible="true">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="etapa" caption="Etapa de Planificación" visible="true">
+              <EditProperties type="comboBox">
+                <Values>
+                  <Value name="ANALISIS" caption="ANÁLISIS"/>
+                  <Value name="DESARROLLO" caption="DESARROLLO"/>
+                  <Value name="PRUEBAS" caption="PRUEBAS"/>
+                  <Value name="INTEGRACION" caption="INTEGRACIÓN"/>
+                </Values>
+                <MFUItems/>
+              </EditProperties>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripción" visible="true">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="criterios_aceptacion" caption="Criterios Aceptación" visible="true">
+              <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="observaciones" caption="Observaciones" visible="true">
+              <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+            </Column>
+          </EditColumns>
+          <InsertColumns>
+            <Column fieldName="id" caption="Id" visible="false" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="num_req_padre" caption="MrCoo" visible="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="num_req_hijo" caption="Caso de Uso" visible="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="etapa" caption="Etapa de Planificación" visible="true" defaultInsertValue="">
+              <EditProperties type="comboBox">
+                <Values>
+                  <Value name="ANALISIS" caption="ANÁLISIS"/>
+                  <Value name="DESARROLLO" caption="DESARROLLO"/>
+                  <Value name="PRUEBAS" caption="PRUEBAS"/>
+                  <Value name="INTEGRACION" caption="INTEGRACIÓN"/>
+                </Values>
+                <MFUItems/>
+              </EditProperties>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripción" visible="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="criterios_aceptacion" caption="Criterios Aceptación" visible="true" defaultInsertValue="">
+              <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="observaciones" caption="Observaciones" visible="true" defaultInsertValue="">
+              <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+            </Column>
+          </InsertColumns>
+          <SimpleSearchColumns>
+            <Column fieldName="id" caption="Id" visible="true"/>
+            <Column fieldName="num_req_padre" caption="MrCoo" visible="true"/>
+            <Column fieldName="num_req_hijo" caption="Caso de Uso" visible="true"/>
+            <Column fieldName="etapa" caption="Etapa de Planificación" visible="true"/>
+            <Column fieldName="descripcion" caption="Descripción" visible="true"/>
+            <Column fieldName="criterios_aceptacion" caption="Criterios Aceptación" visible="false"/>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="false"/>
+            <Column fieldName="observaciones" caption="Observaciones" visible="false"/>
+          </SimpleSearchColumns>
+          <AdvancedSearchColumns>
+            <Column fieldName="id" caption="Id" visible="true" useComboBox="false"/>
+            <Column fieldName="num_req_padre" caption="MrCoo" visible="true" useComboBox="false"/>
+            <Column fieldName="num_req_hijo" caption="Caso de Uso" visible="true" useComboBox="false"/>
+            <Column fieldName="etapa" caption="Etapa de Planificación" visible="true" useComboBox="false"/>
+            <Column fieldName="descripcion" caption="Descripción" visible="true" useComboBox="false"/>
+            <Column fieldName="criterios_aceptacion" caption="Criterios Aceptación" visible="false" useComboBox="false"/>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="false" useComboBox="false"/>
+            <Column fieldName="observaciones" caption="Observaciones" visible="false" useComboBox="false"/>
+          </AdvancedSearchColumns>
+          <ExportColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="num_req_padre" caption="MrCoo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="num_req_hijo" caption="Caso de Uso" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="etapa" caption="Etapa de Planificación" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripcion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="criterios_aceptacion" caption="Criterios Aceptacion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="observaciones" caption="Observaciones" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </ExportColumns>
+          <PrintColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="num_req_padre" caption="MrCoo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="num_req_hijo" caption="Caso de Uso" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="etapa" caption="Etapa de Planificación" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripcion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="criterios_aceptacion" caption="Criterios Aceptacion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="observaciones" caption="Observaciones" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </PrintColumns>
+        </Columns>
+        <Details>
+          <Detail caption="Actividades">
+            <Page type="table" tableName="actividad" fileName="" caption="Actividades" shortCaption="Actividades" groupName="Default" addSeparator="false" horizontalFilterCondition="" openAdvancedSearchAtFirst="false" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" useActionImages="true" showKeyColumnsImagesInGridHeader="false" numberCardsInRow="3">
+              <BeforeGridText/>
+              <Columns>
+                <ViewColumns>
+                  <Column fieldName="id" caption="Id" visible="true" totalFunction="0">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" totalFunction="0">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="descripcion" caption="Descripción" visible="true" totalFunction="0">
+                    <ViewProperties type="text" maxLength="75"/>
+                  </Column>
+                  <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true" totalFunction="0">
+                    <ViewProperties type="text"/>
+                  </Column>
+                </ViewColumns>
+                <SingleRecordViewColumns>
+                  <Column fieldName="id" caption="Id" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="descripcion" caption="Descripción" visible="true">
+                    <ViewProperties type="text" maxLength="75"/>
+                  </Column>
+                  <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                </SingleRecordViewColumns>
+                <EditColumns>
+                  <Column fieldName="id" caption="Id" visible="false">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" canSetNull="true">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="descripcion" caption="Descripción" visible="true" canSetNull="true">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true" canSetNull="true">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                </EditColumns>
+                <InsertColumns>
+                  <Column fieldName="id" caption="Id" visible="false" defaultInsertValue="">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" canSetNull="true" defaultInsertValue="">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="descripcion" caption="Descripción" visible="true" canSetNull="true" defaultInsertValue="">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true" canSetNull="true" defaultInsertValue="">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                </InsertColumns>
+                <SimpleSearchColumns>
+                  <Column fieldName="id" caption="Id" visible="true"/>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false"/>
+                  <Column fieldName="descripcion" caption="Descripción" visible="true"/>
+                  <Column fieldName="esfuerzo" caption="Esfuerzo" visible="false"/>
+                </SimpleSearchColumns>
+                <AdvancedSearchColumns>
+                  <Column fieldName="id" caption="Id" visible="true" useComboBox="false"/>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" useComboBox="false"/>
+                  <Column fieldName="descripcion" caption="Descripción" visible="true" useComboBox="false"/>
+                  <Column fieldName="esfuerzo" caption="Esfuerzo" visible="false" useComboBox="false"/>
+                </AdvancedSearchColumns>
+                <ExportColumns>
+                  <Column fieldName="id" caption="Id" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="descripcion" caption="Descripcion" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                </ExportColumns>
+                <PrintColumns>
+                  <Column fieldName="id" caption="Id" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="descripcion" caption="Descripcion" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                </PrintColumns>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap masterColumnName="id" foreginColumnName="id_planificacion"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+          <Detail caption="Objetos a Aplicar">
+            <Page type="table" tableName="objeto_planificacion" fileName="" caption="Objetos a Aplicar" shortCaption="Objetos a Aplicar" groupName="Default" addSeparator="false" horizontalFilterCondition="" openAdvancedSearchAtFirst="false" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" useActionImages="true" showKeyColumnsImagesInGridHeader="false" numberCardsInRow="3">
+              <BeforeGridText/>
+              <Columns>
+                <ViewColumns>
+                  <Column fieldName="id" caption="Id" visible="true" totalFunction="0">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" totalFunction="0">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_paquete" caption="CMO" visible="true" totalFunction="0">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="nombre" caption="Nombre del Objeto" visible="true" totalFunction="0">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="ruta" caption="Ruta" visible="true" totalFunction="0">
+                    <ViewProperties type="text" maxLength="75"/>
+                  </Column>
+                  <Column fieldName="tipo" caption="Tipo" visible="true" totalFunction="0">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="aplicacion" caption="Aplicación" visible="true" totalFunction="0">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="nuevo" caption="Nuevo" visible="true" totalFunction="0">
+                    <ViewProperties type="text"/>
+                  </Column>
+                </ViewColumns>
+                <SingleRecordViewColumns>
+                  <Column fieldName="id" caption="Id" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_paquete" caption="CMO" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="ruta" caption="Ruta" visible="true">
+                    <ViewProperties type="text" maxLength="75"/>
+                  </Column>
+                  <Column fieldName="tipo" caption="Tipo" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="aplicacion" caption="Aplicación" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="nuevo" caption="Nuevo" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                </SingleRecordViewColumns>
+                <EditColumns>
+                  <Column fieldName="id" caption="Id" visible="false">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" canSetNull="true">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="id_paquete" caption="CMO" visible="true">
+                    <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+                    <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="ruta" caption="Ruta" visible="true">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="tipo" caption="Tipo" visible="true">
+                    <EditProperties type="comboBox">
+                      <Values>
+                        <Value name="HTML" caption="HTML"/>
+                        <Value name="PHP" caption="PHP"/>
+                        <Value name="JS" caption="JS"/>
+                        <Value name="PL/SQL" caption="PL/SQL"/>
+                        <Value name="SCRIPT" caption="SCRIPT ADJUNTO"/>
+                      </Values>
+                      <MFUItems/>
+                    </EditProperties>
+                  </Column>
+                  <Column fieldName="aplicacion" caption="Aplicación" visible="true">
+                    <EditProperties type="comboBox">
+                      <Values>
+                        <Value name="CIKLOS" caption="CIKLOS"/>
+                        <Value name="COOEPS" caption="COOEPS"/>
+                      </Values>
+                      <MFUItems/>
+                    </EditProperties>
+                  </Column>
+                  <Column fieldName="nuevo" caption="Nuevo" visible="true">
+                    <EditProperties type="checkBoxGroup" displayMode="0">
+                      <Values>
+                        <Value name="N" caption="NO"/>
+                        <Value name="S" caption="SI"/>
+                      </Values>
+                    </EditProperties>
+                  </Column>
+                </EditColumns>
+                <InsertColumns>
+                  <Column fieldName="id" caption="Id" visible="false" defaultInsertValue="">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" canSetNull="true" defaultInsertValue="">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="id_paquete" caption="CMO" visible="true" defaultInsertValue="">
+                    <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="nombre" caption="Nombre del Objeto" visible="true" defaultInsertValue="">
+                    <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="ruta" caption="Ruta" visible="true" defaultInsertValue="">
+                    <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+                  </Column>
+                  <Column fieldName="tipo" caption="Tipo" visible="true" defaultInsertValue="">
+                    <EditProperties type="comboBox">
+                      <Values>
+                        <Value name="HTML" caption="HTML"/>
+                        <Value name="PHP" caption="PHP"/>
+                        <Value name="JS" caption="JS"/>
+                        <Value name="PL/SQL" caption="PL/SQL"/>
+                        <Value name="SCRIPT" caption="SCRIPT ADJUNTO"/>
+                      </Values>
+                      <MFUItems/>
+                    </EditProperties>
+                  </Column>
+                  <Column fieldName="aplicacion" caption="Aplicación" visible="true" defaultInsertValue="">
+                    <EditProperties type="comboBox">
+                      <Values>
+                        <Value name="CIKLOS" caption="CIKLOS"/>
+                        <Value name="COOEPS" caption="COOEPS"/>
+                      </Values>
+                      <MFUItems/>
+                    </EditProperties>
+                  </Column>
+                  <Column fieldName="nuevo" caption="Nuevo" visible="true" defaultInsertValue="">
+                    <EditProperties type="checkBoxGroup" displayMode="0">
+                      <Values>
+                        <Value name="N" caption="NO"/>
+                        <Value name="S" caption="SI"/>
+                      </Values>
+                    </EditProperties>
+                  </Column>
+                </InsertColumns>
+                <SimpleSearchColumns>
+                  <Column fieldName="id" caption="Id" visible="true"/>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false"/>
+                  <Column fieldName="id_paquete" caption="CMO" visible="true"/>
+                  <Column fieldName="nombre" caption="Nombre del Objeto" visible="true"/>
+                  <Column fieldName="ruta" caption="Ruta" visible="true"/>
+                  <Column fieldName="tipo" caption="Tipo" visible="true"/>
+                  <Column fieldName="aplicacion" caption="Aplicación" visible="true"/>
+                  <Column fieldName="nuevo" caption="Nuevo" visible="true"/>
+                </SimpleSearchColumns>
+                <AdvancedSearchColumns>
+                  <Column fieldName="id" caption="Id" visible="true" useComboBox="false"/>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" useComboBox="false"/>
+                  <Column fieldName="id_paquete" caption="CMO" visible="true" useComboBox="false"/>
+                  <Column fieldName="nombre" caption="Nombre del Objeto" visible="true" useComboBox="false"/>
+                  <Column fieldName="ruta" caption="Ruta" visible="true" useComboBox="false"/>
+                  <Column fieldName="tipo" caption="Tipo" visible="true" useComboBox="false"/>
+                  <Column fieldName="aplicacion" caption="Aplicación" visible="true" useComboBox="false"/>
+                  <Column fieldName="nuevo" caption="Nuevo" visible="true" useComboBox="false"/>
+                </AdvancedSearchColumns>
+                <ExportColumns>
+                  <Column fieldName="id" caption="Id" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_paquete" caption="CMO" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="ruta" caption="Ruta" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="tipo" caption="Tipo" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="aplicacion" caption="Aplicación" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="nuevo" caption="Nuevo" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                </ExportColumns>
+                <PrintColumns>
+                  <Column fieldName="id" caption="Id" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_planificacion" caption="Id Planificación" visible="false">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="id_paquete" caption="CMO" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="ruta" caption="Ruta" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="tipo" caption="Tipo" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="aplicacion" caption="Aplicación" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                  <Column fieldName="nuevo" caption="Nuevo" visible="true">
+                    <ViewProperties type="text"/>
+                  </Column>
+                </PrintColumns>
+              </Columns>
+              <Details/>
+              <RecordPermissions useRecordPermissions="false"/>
+              <PartitionNavigators/>
+            </Page>
+            <MasterForeignKeyColumnMap>
+              <FieldMap masterColumnName="id" foreginColumnName="id_planificacion"/>
+            </MasterForeignKeyColumnMap>
+          </Detail>
+        </Details>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="actividad" includedIntoPageList="false" fileName="actividad" caption="Actividad" shortCaption="Actividad" groupName="Default" addSeparator="false" horizontalFilterCondition="" openAdvancedSearchAtFirst="false" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" useActionImages="true" showKeyColumnsImagesInGridHeader="false" numberCardsInRow="3">
+        <BeforeGridText/>
+        <Columns>
+          <ViewColumns>
+            <Column fieldName="id" caption="Id" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificacion" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripcion" visible="true" totalFunction="0">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+          </ViewColumns>
+          <SingleRecordViewColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificacion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripcion" visible="true">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </SingleRecordViewColumns>
+          <EditColumns>
+            <Column fieldName="id" caption="Id" visible="false">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificacion" visible="true" canSetNull="true">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripcion" visible="true" canSetNull="true">
+              <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true" canSetNull="true">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+          </EditColumns>
+          <InsertColumns>
+            <Column fieldName="id" caption="Id" visible="false" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificacion" visible="true" canSetNull="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripcion" visible="true" canSetNull="true" defaultInsertValue="">
+              <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true" canSetNull="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+          </InsertColumns>
+          <SimpleSearchColumns>
+            <Column fieldName="id" caption="Id" visible="true"/>
+            <Column fieldName="id_planificacion" caption="Id Planificacion" visible="true"/>
+            <Column fieldName="descripcion" caption="Descripcion" visible="true"/>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true"/>
+          </SimpleSearchColumns>
+          <AdvancedSearchColumns>
+            <Column fieldName="id" caption="Id" visible="true" useComboBox="false"/>
+            <Column fieldName="id_planificacion" caption="Id Planificacion" visible="true" useComboBox="false"/>
+            <Column fieldName="descripcion" caption="Descripcion" visible="true" useComboBox="false"/>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true" useComboBox="false"/>
+          </AdvancedSearchColumns>
+          <ExportColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificacion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripcion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </ExportColumns>
+          <PrintColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificacion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="descripcion" caption="Descripcion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="esfuerzo" caption="Esfuerzo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </PrintColumns>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="objeto_planificacion" fileName="objeto_planificacion" caption="Objetos Planificación" shortCaption="Objetos Planificación" groupName="Default" addSeparator="false" horizontalFilterCondition="" openAdvancedSearchAtFirst="false" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" useActionImages="true" showKeyColumnsImagesInGridHeader="false" numberCardsInRow="3">
+        <BeforeGridText/>
+        <Columns>
+          <ViewColumns>
+            <Column fieldName="id" caption="Id" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true" totalFunction="0">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicacion" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+          </ViewColumns>
+          <SingleRecordViewColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificación" visible="false">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicacion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </SingleRecordViewColumns>
+          <EditColumns>
+            <Column fieldName="id" caption="Id" visible="false">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" canSetNull="true">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true">
+              <EditProperties type="comboBox">
+                <Values>
+                  <Value name="HTML" caption="HTML"/>
+                  <Value name="PHP" caption="PHP"/>
+                  <Value name="JS" caption="JS"/>
+                  <Value name="PL/SQL" caption="PL/SQL"/>
+                  <Value name="SCRIPT" caption="SCRIPT ADJUNTO"/>
+                </Values>
+                <MFUItems/>
+              </EditProperties>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicacion" visible="true">
+              <EditProperties type="comboBox">
+                <Values>
+                  <Value name="CIKLOS" caption="CIKLOS"/>
+                  <Value name="COOEPS" caption="COOEPS"/>
+                </Values>
+                <MFUItems/>
+              </EditProperties>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true">
+              <EditProperties type="checkBoxGroup" displayMode="0">
+                <Values>
+                  <Value name="N" caption="NO"/>
+                  <Value name="S" caption="SI"/>
+                </Values>
+              </EditProperties>
+            </Column>
+          </EditColumns>
+          <InsertColumns>
+            <Column fieldName="id" caption="Id" visible="false" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" canSetNull="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true" defaultInsertValue="">
+              <EditProperties type="comboBox">
+                <Values>
+                  <Value name="HTML" caption="HTML"/>
+                  <Value name="PHP" caption="PHP"/>
+                  <Value name="JS" caption="JS"/>
+                  <Value name="PL/SQL" caption="PL/SQL"/>
+                  <Value name="SCRIPT" caption="SCRIPT ADJUNTO"/>
+                </Values>
+                <MFUItems/>
+              </EditProperties>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicacion" visible="true" defaultInsertValue="">
+              <EditProperties type="comboBox">
+                <Values>
+                  <Value name="CIKLOS" caption="CIKLOS"/>
+                  <Value name="COOEPS" caption="COOEPS"/>
+                </Values>
+                <MFUItems/>
+              </EditProperties>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true" defaultInsertValue="">
+              <EditProperties type="checkBoxGroup" displayMode="0">
+                <Values>
+                  <Value name="N" caption="NO"/>
+                  <Value name="S" caption="SI"/>
+                </Values>
+              </EditProperties>
+            </Column>
+          </InsertColumns>
+          <SimpleSearchColumns>
+            <Column fieldName="id" caption="Id" visible="true"/>
+            <Column fieldName="id_planificacion" caption="Id Planificación" visible="false"/>
+            <Column fieldName="id_paquete" caption="CMO" visible="true"/>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true"/>
+            <Column fieldName="ruta" caption="Ruta" visible="true"/>
+            <Column fieldName="tipo" caption="Tipo" visible="true"/>
+            <Column fieldName="aplicacion" caption="Aplicacion" visible="true"/>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true"/>
+          </SimpleSearchColumns>
+          <AdvancedSearchColumns>
+            <Column fieldName="id" caption="Id" visible="true" useComboBox="false"/>
+            <Column fieldName="id_planificacion" caption="Id Planificación" visible="false" useComboBox="false"/>
+            <Column fieldName="id_paquete" caption="CMO" visible="true" useComboBox="false"/>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true" useComboBox="false"/>
+            <Column fieldName="ruta" caption="Ruta" visible="true" useComboBox="false"/>
+            <Column fieldName="tipo" caption="Tipo" visible="true" useComboBox="false"/>
+            <Column fieldName="aplicacion" caption="Aplicacion" visible="true" useComboBox="false"/>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true" useComboBox="false"/>
+          </AdvancedSearchColumns>
+          <ExportColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificación" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicacion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </ExportColumns>
+          <PrintColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_planificacion" caption="Id Planificación" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicacion" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </PrintColumns>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+      <Page type="table" tableName="objeto_refactorizacion" fileName="objeto_refactorizacion" caption="Objetos Refactorización" shortCaption="Objetos Refactorización" groupName="Default" addSeparator="false" horizontalFilterCondition="" openAdvancedSearchAtFirst="false" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" useActionImages="true" showKeyColumnsImagesInGridHeader="false" numberCardsInRow="3">
+        <BeforeGridText/>
+        <Columns>
+          <ViewColumns>
+            <Column fieldName="id" caption="Id" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true" totalFunction="0">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicación" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_noconforme" caption="Número NC" visible="true" totalFunction="0">
+              <ViewProperties type="text"/>
+            </Column>
+          </ViewColumns>
+          <SingleRecordViewColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true">
+              <ViewProperties type="text" maxLength="75"/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicación" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_noconforme" caption="Número NC" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </SingleRecordViewColumns>
+          <EditColumns>
+            <Column fieldName="id" caption="Id" visible="false">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true">
+              <EditProperties type="comboBox">
+                <Values>
+                  <Value name="HTML" caption="HTML"/>
+                  <Value name="PHP" caption="PHP"/>
+                  <Value name="JS" caption="JS"/>
+                  <Value name="PL/SQL" caption="PL/SQL"/>
+                  <Value name="SCRIPT" caption="SCRIPT ADJUNTO"/>
+                </Values>
+                <MFUItems/>
+              </EditProperties>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicación" visible="true">
+              <EditProperties type="comboBox">
+                <Values>
+                  <Value name="CIKLOS" caption="CIKLOS"/>
+                  <Value name="COOEPS" caption="COOEPS"/>
+                </Values>
+                <MFUItems/>
+              </EditProperties>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true">
+              <EditProperties type="checkBoxGroup" displayMode="0">
+                <Values>
+                  <Value name="N" caption="NO"/>
+                  <Value name="S" caption="SI"/>
+                </Values>
+              </EditProperties>
+            </Column>
+            <Column fieldName="id_noconforme" caption="Número NC" visible="true" canSetNull="true">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+          </EditColumns>
+          <InsertColumns>
+            <Column fieldName="id" caption="Id" visible="false" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="0" placeholder="" prefix="" suffix=""/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true" defaultInsertValue="">
+              <EditProperties type="comboBox">
+                <Values>
+                  <Value name="HTML" caption="HTML"/>
+                  <Value name="PHP" caption="PHP"/>
+                  <Value name="JS" caption="JS"/>
+                  <Value name="PL/SQL" caption="PL/SQL"/>
+                  <Value name="SCRIPT" caption="SCRIPT ADJUNTO"/>
+                </Values>
+                <MFUItems/>
+              </EditProperties>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicación" visible="true" defaultInsertValue="">
+              <EditProperties type="comboBox">
+                <Values>
+                  <Value name="CIKLOS" caption="CIKLOS"/>
+                  <Value name="COOEPS" caption="COOEPS"/>
+                </Values>
+                <MFUItems/>
+              </EditProperties>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true" defaultInsertValue="">
+              <EditProperties type="checkBoxGroup" displayMode="0">
+                <Values>
+                  <Value name="N" caption="NO"/>
+                  <Value name="S" caption="SI"/>
+                </Values>
+              </EditProperties>
+            </Column>
+            <Column fieldName="id_noconforme" caption="Número NC" visible="true" canSetNull="true" defaultInsertValue="">
+              <EditProperties type="textBox" maxLength="64" placeholder="" prefix="" suffix=""/>
+            </Column>
+          </InsertColumns>
+          <SimpleSearchColumns>
+            <Column fieldName="id" caption="Id" visible="true"/>
+            <Column fieldName="id_paquete" caption="CMO" visible="true"/>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true"/>
+            <Column fieldName="ruta" caption="Ruta" visible="true"/>
+            <Column fieldName="tipo" caption="Tipo" visible="true"/>
+            <Column fieldName="aplicacion" caption="Aplicación" visible="true"/>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true"/>
+            <Column fieldName="id_noconforme" caption="Número NC" visible="true"/>
+          </SimpleSearchColumns>
+          <AdvancedSearchColumns>
+            <Column fieldName="id" caption="Id" visible="true" useComboBox="false"/>
+            <Column fieldName="id_paquete" caption="CMO" visible="true" useComboBox="false"/>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true" useComboBox="false"/>
+            <Column fieldName="ruta" caption="Ruta" visible="true" useComboBox="false"/>
+            <Column fieldName="tipo" caption="Tipo" visible="true" useComboBox="false"/>
+            <Column fieldName="aplicacion" caption="Aplicación" visible="true" useComboBox="false"/>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true" useComboBox="false"/>
+            <Column fieldName="id_noconforme" caption="Número NC" visible="true" useComboBox="false"/>
+          </AdvancedSearchColumns>
+          <ExportColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicación" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_noconforme" caption="Número NC" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </ExportColumns>
+          <PrintColumns>
+            <Column fieldName="id" caption="Id" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_paquete" caption="CMO" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nombre" caption="Nombre del Objeto" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="ruta" caption="Ruta" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="tipo" caption="Tipo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="aplicacion" caption="Aplicación" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="nuevo" caption="Nuevo" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+            <Column fieldName="id_noconforme" caption="Número NC" visible="true">
+              <ViewProperties type="text"/>
+            </Column>
+          </PrintColumns>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+    </Pages>
+    <UserAuthorization type="tableBased" tableName="phpgen_users" userNameField="user_name" passwordField="user_password" userIdField="user_id" passwordEncryption="SHA1" allowUserToChangePassword="false"/>
+    <UserGrants enableGuestAccess="false">
+      <UserGrant userName="defaultUser" select="1"/>
+      <UserGrant userName="administrador" admin="1"/>
+      <UserGrant userName="usuario" select="1"/>
+      <UserPageGrants>
+        <PageGrants userName="defaultUser">
+          <PageGrant pageName="planificacion"/>
+          <PageGrant pageName="planificacion.actividad"/>
+          <PageGrant pageName="planificacion.objeto_planificacion" select="1" insert="1" update="1" delete="1"/>
+          <PageGrant pageName="actividad"/>
+          <PageGrant pageName="objeto_planificacion" select="1" insert="1" update="1" delete="1"/>
+          <PageGrant pageName="objeto_refactorizacion" select="1" insert="1" update="1" delete="1"/>
+        </PageGrants>
+        <PageGrants userName="administrador">
+          <PageGrant pageName="planificacion"/>
+          <PageGrant pageName="planificacion.actividad"/>
+          <PageGrant pageName="planificacion.objeto_planificacion"/>
+          <PageGrant pageName="actividad"/>
+          <PageGrant pageName="objeto_planificacion"/>
+          <PageGrant pageName="objeto_refactorizacion"/>
+        </PageGrants>
+        <PageGrants userName="usuario">
+          <PageGrant pageName="planificacion"/>
+          <PageGrant pageName="planificacion.actividad"/>
+          <PageGrant pageName="planificacion.objeto_planificacion" admin="1"/>
+          <PageGrant pageName="actividad"/>
+          <PageGrant pageName="objeto_planificacion"/>
+          <PageGrant pageName="objeto_refactorizacion" admin="1"/>
+        </PageGrants>
+      </UserPageGrants>
+    </UserGrants>
+    <Header/>
+    <Footer/>
+    <Groups>
+      <Group>
+Default      </Group>
+    </Groups>
+  </Presentation>
+  <UserCSS/>
+  <UserJS/>
+  <ExcludedPaths/>
+  <DefaultPageProperties recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" useActionImages="true" showKeyColumnsImagesInGridHeader="false" numberCardsInRow="3"/>
+  <DefaultDataFormats numberAfterDecimal="4" DecimalSeparator="." ThousandSeparator="," DateTimeFormat="Y-m-d H:i:s" DateFormat="Y-m-d" firstDayOfWeek="0"/>
+</Project>
